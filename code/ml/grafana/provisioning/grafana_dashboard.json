@@ -272,6 +272,58 @@
                 "type": "macro"
               }
             ]
+          },
+          {
+            "format": "time_series",
+            "group": [],
+            "metricColumn": "none",
+            "rawQuery": true,
+            "rawSql": "SELECT \"column1\" as time, \"column10\" as \"Column10\" FROM dscovr ORDER BY \"column1\" ASC;\n",
+            "refId": "I",
+            "select": [
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "column"
+                }
+              ]
+            ],
+            "timeColumn": "time",
+            "where": [
+              {
+                "name": "$__timeFilter",
+                "params": [],
+                "type": "macro"
+              }
+            ]
+          },
+          {
+            "format": "time_series",
+            "group": [],
+            "metricColumn": "none",
+            "rawQuery": true,
+            "rawSql": "SELECT \"column1\" as time, \"column11\" as \"Column11\" FROM dscovr ORDER BY \"column1\" ASC;\n",
+            "refId": "J",
+            "select": [
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "column"
+                }
+              ]
+            ],
+            "timeColumn": "time",
+            "where": [
+              {
+                "name": "$__timeFilter",
+                "params": [],
+                "type": "macro"
+              }
+            ]
           }
         ],
         "thresholds": [],
@@ -331,5 +383,5 @@
     "timezone": "",
     "title": "Nasa Challenge 2023",
     "uid": "2dL_HHGIk",
-    "version": 7
+    "version": 8
   }
