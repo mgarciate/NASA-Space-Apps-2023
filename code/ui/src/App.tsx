@@ -4,14 +4,17 @@ import ChartComponent from './components/ChartComponent';
 import SliderComponent from './components/SliderComponent';
 import { withResizeDetector } from 'react-resize-detector';
 import Swal from 'sweetalert2';
+import jsonData from './data/data_in_json_format.json';
+
+interface DataPoint {
+  name: number;
+  [key: string]: number | string;  // This allows for dynamic keys like column2, column3, etc.
+}
 
 function App() {
   const [sliderValue, setSliderValue] = useState(1);
   const [isPaused, setIsPaused] = useState(false);
-  const [data, setData] = useState([
-    { name: 'A', line1: 50, line2: 30 },
-    { name: 'B', line1: 60, line2: 40 },
-  ]);
+  const [data, setData] = useState<DataPoint[]>([]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -32,18 +35,24 @@ function App() {
         }
         return prevValue + 1;
       });
-    }, 1000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [isPaused]);
 
   useEffect(() => {
-    setData((prevData) => prevData.map((point) => ({
-      ...point,
-      line1: point.line1 + sliderValue,
-      line2: point.line2 + sliderValue,
-    })));
-  }, [sliderValue]);
+    const transformedData: DataPoint[] = jsonData[0].map((name: number, index: number) => {
+      let obj: DataPoint = { name };
+      for (let i = 1; i < jsonData.length; i++) {
+        if (jsonData[i][0] > 1658053200) {
+          break;
+        }
+        obj[`column${i + 1}`] = jsonData[i][index];
+      }
+      return obj;
+    });
+    setData(transformedData);
+  }, []);
 
   return (
     <div className="App">
