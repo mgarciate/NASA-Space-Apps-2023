@@ -23,6 +23,13 @@ By ingesting data in real time and having developed a trained model, we can now 
 - React
 - Github actions
 
+## Screenshots
+![storm 2022 grafana screenshot](https://github.com/mgarciate/StormDestroyers_NASASpaceApps2023/blob/master/screenshots/20220718.png?raw=true)
+
+![storm 2021 grafana screenshot](https://github.com/mgarciate/StormDestroyers_NASASpaceApps2023/blob/master/screenshots/20221009.png?raw=true)
+
+![PostgreSQL screenshot](https://github.com/mgarciate/StormDestroyers_NASASpaceApps2023/blob/master/screenshots/database.png?raw=true)
+
 ## Parameters in raw data
 
 - Column 01 -> Date YYYY-MM-DD hh:mm:ss
