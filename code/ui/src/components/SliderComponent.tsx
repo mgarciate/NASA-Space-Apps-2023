@@ -2,10 +2,11 @@ import React from 'react';
 
 type SliderProps = {
     value: number;
+    name: string;
     onChange: (value: number) => void;
 };
 
-const SliderComponent: React.FC<SliderProps> = ({ value, onChange }) => {
+const SliderComponent: React.FC<SliderProps> = ({ value, name, onChange }) => {
     return (
         <div>
             <input
@@ -16,7 +17,7 @@ const SliderComponent: React.FC<SliderProps> = ({ value, onChange }) => {
                 onChange={(e) => onChange(Number(e.target.value))}
                 style={{ width: '100%' }}
             />
-            <div className="slider-value">Value: {value}</div>
+            <div className="slider-value">Value: {name}</div>
         </div>
     );
 };

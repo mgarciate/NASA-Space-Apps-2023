@@ -1,14 +1,15 @@
 import React from 'react';
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts';
 
 interface DataPoint {
-  name: number;
+  name: string;
   [key: string]: number | string;  // This allows for dynamic keys like column2, column3, etc.
 }
 
 type ChartProps = {
-    data: DataPoint[];
-    lines: string[];
+  data: DataPoint[];
+  lines: string[];
+  xValue: string;
 };
 
 // Array of colors
@@ -20,28 +21,29 @@ const colors = [
   '#eeff41', '#c6ff00', '#ffea00', '#ffd740', '#ffa726'
 ];
 
-const ChartComponent: React.FC<ChartProps> = ({ data, lines }) => {
-    return (
-      <div className="chart-container">
-        <ResponsiveContainer width="100%" height="100%">
+const ChartComponent: React.FC<ChartProps> = ({ data, lines, xValue }) => {
+  return (
+    <div className="chart-container">
+      <ResponsiveContainer width="100%" height="100%">
         <LineChart width={1000} height={500} data={data}>
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
           <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
+          <ReferenceLine x={xValue} stroke="#B71C1C" strokeWidth={4} />
           {/* Add Lines for each column */}
           {Array.from({ length: 33 }).map((_, index) => (
-            <Line 
-              type="monotone" 
-              dataKey={`column${index + 2}`} 
-              stroke={colors[index % colors.length]} 
+            <Line
+              type="monotone"
+              dataKey={`column${index + 2}`}
+              stroke={colors[index % colors.length]}
               dot={false}
               key={index} />
           ))}
         </LineChart>
-        </ResponsiveContainer>
-      </div>
-    );
-  };
+      </ResponsiveContainer>
+    </div>
+  );
+};
 
 export default ChartComponent;
