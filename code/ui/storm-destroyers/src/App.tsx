@@ -44,7 +44,7 @@ function App() {
       line2: point.line2 + sliderValue,
     }));
     setData(newData);
-  }, [sliderValue, data]);
+  }, [sliderValue]);
 
   return (
     <div className="App">
