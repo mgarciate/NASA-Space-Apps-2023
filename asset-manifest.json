@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NASA-Space-Apps-2023/static/css/main.360e908b.css",
+    "main.js": "/NASA-Space-Apps-2023/static/js/main.c5f74980.js",
+    "static/js/787.9d44b8df.chunk.js": "/NASA-Space-Apps-2023/static/js/787.9d44b8df.chunk.js",
+    "index.html": "/NASA-Space-Apps-2023/index.html",
+    "main.360e908b.css.map": "/NASA-Space-Apps-2023/static/css/main.360e908b.css.map",
+    "main.c5f74980.js.map": "/NASA-Space-Apps-2023/static/js/main.c5f74980.js.map",
+    "787.9d44b8df.chunk.js.map": "/NASA-Space-Apps-2023/static/js/787.9d44b8df.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.360e908b.css",
+    "static/js/main.c5f74980.js"
+  ]
+}
