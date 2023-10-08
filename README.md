@@ -1,4 +1,5 @@
 # Storm Destroyers - NASA Space Apps 2023
+<img src="https://github.com/mgarciate/StormDestroyers_NASASpaceApps2023/blob/master/logo.jpeg?raw=true" data-canonical-src="https://github.com/mgarciate/StormDestroyers_NASASpaceApps2023/blob/master/logo.jpeg?raw=true" width="400" height="400" />
 Storm Destroyers visualizes data from the Experimental Data Repository, offering real-time insights into solar activities. Users can track key metrics and trends, ensuring timely awareness. Be alert: the oracle will signal impending solar storms!
 
 ## Tasks
