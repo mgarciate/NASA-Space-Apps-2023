@@ -38,12 +38,11 @@ function App() {
   }, [isPaused]);
 
   useEffect(() => {
-    const newData = data.map((point) => ({
+    setData((prevData) => prevData.map((point) => ({
       ...point,
       line1: point.line1 + sliderValue,
       line2: point.line2 + sliderValue,
-    }));
-    setData(newData);
+    })));
   }, [sliderValue]);
 
   return (
