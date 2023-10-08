@@ -89,3 +89,9 @@ By ingesting data in real time and having developed a trained model, we can now 
 - Column 52 -> Polar Cap (N) Index
 - Column 53 -> AL Index
 - Column 54 -> AU Index
+
+## References
+- [https://www.kaggle.com/code/mfaaris/hybrid-and-tensorflow-recommender-system](https://www.kaggle.com/code/mfaaris/hybrid-and-tensorflow-recommender-system)
+- [https://www.spaceappschallenge.org/2023/challenges/develop-the-oracle-of-dscovr/?tab=resources](https://www.spaceappschallenge.org/2023/challenges/develop-the-oracle-of-dscovr/?tab=resources)
+- [https://hpde.io/NASA/NumericalData/OMNI/PT1H](https://hpde.io/NASA/NumericalData/OMNI/PT1H)
+- [https://v4.mui.com/getting-started/usage/](https://v4.mui.com/getting-started/usage/)
