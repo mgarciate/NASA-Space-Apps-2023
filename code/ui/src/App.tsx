@@ -22,8 +22,8 @@ function App() {
           Swal.fire({
             title: 'Reached warning values!',
             text: 'The slider value has reached 50.',
-            icon: 'success',
-            confirmButtonText: 'Cool'
+            icon: 'warning',
+            confirmButtonText: 'OK'
           });
         }
         if (prevValue >= 100) {
