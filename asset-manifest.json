@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/StormDestroyers_NASASpaceApps2023/static/css/main.360e908b.css",
-    "main.js": "/StormDestroyers_NASASpaceApps2023/static/js/main.a04f7142.js",
+    "main.js": "/StormDestroyers_NASASpaceApps2023/static/js/main.6fd68593.js",
     "static/js/787.9d44b8df.chunk.js": "/StormDestroyers_NASASpaceApps2023/static/js/787.9d44b8df.chunk.js",
     "index.html": "/StormDestroyers_NASASpaceApps2023/index.html",
     "main.360e908b.css.map": "/StormDestroyers_NASASpaceApps2023/static/css/main.360e908b.css.map",
-    "main.a04f7142.js.map": "/StormDestroyers_NASASpaceApps2023/static/js/main.a04f7142.js.map",
+    "main.6fd68593.js.map": "/StormDestroyers_NASASpaceApps2023/static/js/main.6fd68593.js.map",
     "787.9d44b8df.chunk.js.map": "/StormDestroyers_NASASpaceApps2023/static/js/787.9d44b8df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.360e908b.css",
-    "static/js/main.a04f7142.js"
+    "static/js/main.6fd68593.js"
   ]
 }
