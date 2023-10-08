@@ -7,13 +7,13 @@ The objective is to identify essential variables to predict solar storms. We sta
 By ingesting data in real time and having developed a trained model, we can now predict future storms further in advance than current methods allow, thanks to data analysis. Having achieved this objective, we are in a position to establish warning systems, aimed not only at researchers but also at the general public.
 
 ## Project
-[https://www.spaceappschallenge.org/2023/challenges/develop-the-oracle-of-dscovr/?tab=details]()
+[https://www.spaceappschallenge.org/2023/challenges/develop-the-oracle-of-dscovr/?tab=details](https://www.spaceappschallenge.org/2023/challenges/develop-the-oracle-of-dscovr/?tab=details)
 
 ## Dataset
-[https://www.spaceappschallenge.org/develop-the-oracle-of-dscovr-experimental-data-repository/]()
+[https://www.spaceappschallenge.org/develop-the-oracle-of-dscovr-experimental-data-repository/](https://www.spaceappschallenge.org/develop-the-oracle-of-dscovr-experimental-data-repository/)
 
 ## Demo website
-[https://mgarciate.github.io/StormDestroyers_NASASpaceApps2023]()
+[https://mgarciate.github.io/StormDestroyers_NASASpaceApps2023](https://mgarciate.github.io/StormDestroyers_NASASpaceApps2023)
 
 ## Tools
 - PostgreSQL
