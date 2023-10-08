@@ -20,7 +20,7 @@ function App() {
       setSliderValue((prevValue) => {
         if (prevValue === 50) {
           Swal.fire({
-            title: 'Reached 50!',
+            title: 'Reached warning values!',
             text: 'The slider value has reached 50.',
             icon: 'success',
             confirmButtonText: 'Cool'
@@ -47,8 +47,8 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Storm Destroyers</h2>
-      <p className="description">Here is a brief description about Storm Destroyers. You can provide more details or customize this text as needed.</p>
+      <h2>Storm Destroyers ☀️🌞😎</h2>
+      <p className="description">Storm Destroyers visualizes data from the Experimental Data Repository, offering real-time insights into solar activities. Users can track key metrics and trends, ensuring timely awareness. Be alert: the oracle will signal impending solar storms!</p>
       <div className="container" style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
         <div style={{ flexGrow: 1 }}>
           <SliderComponent value={sliderValue} onChange={setSliderValue} />
